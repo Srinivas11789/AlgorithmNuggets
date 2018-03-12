@@ -1,4 +1,9 @@
 # 101 Challenge -> Binary Challenge
+# Lesson: 
+#  * Binary number conversion in python is easy with bin() function but it adds a "0b" in the front of the string
+#  	* Try to bypass the 0b for proper functionality
+#  * Max decision loop => (If max >) should be placed properly for the answer.
+#       * Place the decision loop logic so that you could fetch the right output. For instance placing the resp if loop in the beginning of for loop throws wrong ans
 
 #!/bin/python
 
