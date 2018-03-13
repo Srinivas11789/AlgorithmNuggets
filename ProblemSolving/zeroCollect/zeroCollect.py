@@ -1,3 +1,6 @@
+########## lesson learnt:
+* Had already done this question but nothing clicked for a while - reduce nervousness while writing the code, donot care of the person sitting on the other side
+* think clearly in both the decision loops always, do not look into one specific loop always, look around for it... the solution is present in front or where you are not looking
 
 #N2 Logic    
 def zeroCollect(a):
