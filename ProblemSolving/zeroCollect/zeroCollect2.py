@@ -26,6 +26,16 @@ class Solution(object):
                         nums[j] = 0
                         break
             #print nums
+
+	# Easiest thinking - just place all the non zero to front and add 0s
+        lastNonZero = -1
+        for i in range(len(nums)):
+            if nums[i] != 0:                
+                lastNonZero += 1
+                nums[lastNonZero] = nums[i]
+        for i in range(lastNonZero+1,len(nums)):
+            nums[i] = 0
+        
         
         #nums = sorted(nums)
                 
