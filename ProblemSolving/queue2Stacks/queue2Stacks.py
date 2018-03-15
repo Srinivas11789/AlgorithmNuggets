@@ -1,3 +1,5 @@
+# A good explanation: https://stackoverflow.com/questions/69192/how-to-implement-a-queue-using-two-stacks
+
 class MyQueue(object):
     def __init__(self):
         self.first = []
