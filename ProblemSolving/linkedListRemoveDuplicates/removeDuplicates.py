@@ -1,3 +1,10 @@
+###################### Linked List Remove Duplicates
+# Always dont get tensed, know what you are doing and arrange them properly (The code statements)
+# When you know the logic well and code and still not successfull in a particular testcase, all you can do is re-arrange and properly look what you are doing
+# Example, you deleted the node properly by setting the previous.next, but still you made previous= head which is the deleted node
+# Similarly you kept missing the root and last node settings in the while loop
+# correct these else it would take much time
+
 class Node:
     def __init__(self,data):
         self.data = data
