@@ -1,3 +1,4 @@
+# Codility Problem
 # Dictionary Logic Passes the test with complexity O(N)or(NlogN) while the list logic takes O(N2) or greater than 6 seconds
 
 # you can write to stdout for debugging purposes, e.g.
