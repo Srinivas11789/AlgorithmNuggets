@@ -2,7 +2,7 @@
 # Codility Problems
 # PermMissingElement
 # - Find the missing element in the array of elements forming a consecutive series
-
+Reference: https://www.geeksforgeeks.org/find-the-missing-number/
 # Thoughts Logic 1
 # Put all elements into a dictionary, sort the keys and then try to find missing
 
@@ -24,6 +24,20 @@
 # * think about array with two element
 
 def solution(A):
+    
+    ## Easy logic - total sum => n(n+1)/2
+    ################ Question asked to have numbers always from 1,2,3 .... N with one missing
+    ################ So only one element will be missing always a tc like [7,8,10,11] will be invalid
+    n = len(A)
+    sum = 0
+    total = (n+1)*(n+2)//2
+    for i in range(n):
+        sum = sum + A[i]
+    return total - sum
+    
+    ####
+
+    """
     n = len(A)
     if n == 0 or n == 1:
         return 0
@@ -35,6 +49,7 @@ def solution(A):
         else:
             #print(i)
             return i
+    """
     """
     n = len(A)
     seen = []
