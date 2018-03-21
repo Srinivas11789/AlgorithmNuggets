@@ -4,6 +4,11 @@
 ## 100 percent pass
 # A Linear Time Majority Vote Algorithm - Good exaplanation at http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
 
+#### Take care of all possible sceanrios when writing the logic
+#### * Conditions handled were count == 0, else if not element then count--, what about count++ when the same element appears again. Costed 2 testcases in the solution. 
+#### * Lesson: Reason why some case is missed and handle them as well, when element is not present, when it is present, same element visited again and different element visited.
+
+
 def solution(A):
 
     ## Majority Vote Problem Idea - Count the element which already occured logic
