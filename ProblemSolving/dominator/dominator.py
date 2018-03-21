@@ -1,12 +1,52 @@
 # Codility Dominator -
 # Lessons learnt: 
 ## Easy testcase failed - test for empty array!!!!!!!!
-## Two testcases keep failing for random and large number 85+ all param pass
-
+## 100 percent pass
 # A Linear Time Majority Vote Algorithm - Good exaplanation at http://www.cs.utexas.edu/~moore/best-ideas/mjrty/
 
 def solution(A):
+
+    ## Majority Vote Problem Idea - Count the element which already occured logic
+    def solution(A):
     
+    ## Majorioty Vote Problem Idea
+    ## Have two variables one ind keeps track of the element and other the occurence, iterate the array one time and increment for occurence and decrement for not occuring scenario
+    
+    n = len(A)
+    ind = 0
+    count = 0
+    last_ind = 0
+    maxi = 0
+    
+    if n == 0:
+        return -1
+    
+    for i in range(n):
+    # This logic will work according to the explanation, This will give the max element for sure  
+        if count == 0:
+            count += 1
+            ind = A[i]
+            last_ind = i
+        else:
+            # Count for same number again
+            if A[i] == ind:
+                count += 1
+            else:    
+                count -= 1
+    # we got to find whether the given element is greater than half the array length
+    for i in range(n):
+        if A[i] == ind:
+            maxi += 1
+            #last_ind = i
+            
+    #if float(max) > n/2.0:
+    if maxi > n//2:
+        return last_ind
+    else:
+        return -1
+
+    """	
+    ## Two testcases keep failing for random and large number 85+ all param pass
     ## Majorioty Vote Problem Idea
     ## Have two variables one ind keeps track of the element and other the occurence, iterate the array one time and increment for occurence and decrement for not occuring scenario
     
@@ -38,7 +78,7 @@ def solution(A):
         return last_ind
     else:
         return -1
-        
+    """ 
     """
     # 50 percent on all param 
     ### Throwing the last index
