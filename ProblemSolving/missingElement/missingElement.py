@@ -1,4 +1,4 @@
-#############
+i#############
 # Codility Problems
 # PermMissingElement
 # - Find the missing element in the array of elements forming a consecutive series
@@ -30,11 +30,12 @@ def solution(A):
     ################ So only one element will be missing always a tc like [7,8,10,11] will be invalid
     n = len(A)
     sum = 0
-    total = (n+1)*(n+2)//2
+    num = n+1
+    total = (num)*(num+1)//2
     for i in range(n):
         sum = sum + A[i]
     return total - sum
-    
+ 
     ####
 
     """
