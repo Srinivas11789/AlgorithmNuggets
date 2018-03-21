@@ -4,6 +4,16 @@
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
 
+
+# Strategy:
+# * Use native datastrcutures like set, list and dictionary to solve, think in those manner
+# * There are 2 methods for this problem:
+#   * one is calculating the total sum and minus the sum of consecutive integer formula which is n(n+1)/2
+#   * two is the method of using set when repetitive elements are found in the list.
+#   * n+1 at both the solutions denotes the list of integers is always one greater as one remains missing a list of length 5 (1,2,3,4,6) has 5 missing and we need to check n+1
+
+
+
 def solution(A):
     # write your code in Python 3.6
     n = len(A)
