@@ -1,8 +1,36 @@
 # Codility Problem - MaxProfit - Slicing Technique
 #
 
-def solution(A):
+def solution(A): 
     
+    # Slice problem of considering 2 elements at a time in an array, keep track of current_maximum and the flowing maximum
+    # Iterate the array backwards as we are interested in the profit
+    # Setting the current maximum to the last integer in the array for easy of tracking and iteration
+    # backwards loop from integer before the last integer which is n-2
+    # Keep track of the profit and the flowing maximum
+    # Update the current maximum everytime a higher number is being hit
+    n = len(A)
+    if n < 2:
+        return 0
+    ## Keep the n < 2 logic above the current maximum setting, as the current maximum will throw error when array is empty, easy testcase - check for empty
+    ## 
+    curr_max = A[n-1]
+    maxi = 0
+    profit = 0
+    #if n < 2:
+    #    return 0
+    for i in range(n-2,-1,-1):
+        profit = curr_max - A[i]
+        if profit > maxi:
+            maxi = profit
+        if A[i] > curr_max:
+            curr_max = A[i]
+    return maxi
+            
+    
+
+	
+    """
     # Slicing the array into 2 pairs each
     # Slice solution in reference to codesays
     
@@ -28,6 +56,7 @@ def solution(A):
         max_here = max(A[i],max_here)
         #print(maxi,max_here)
     return maxi
+    """
         
     # Worst case logic of using 2 for loops - 60/40 percent
     """
