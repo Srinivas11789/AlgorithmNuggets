@@ -5,22 +5,25 @@
 def solution(N, P, Q):
     n = len(P)
     ans = []
+    # Memoize
+    primes = []
     for i in range(n):
         lower = P[i]
         higher = Q[i]
-        primes = []
+        #primes = []
         count = 0
         for j in range(1,higher):
             num = 1
-            while num < j:
-                if j%num == 0:
-                    count += 1
-                num += 1
-            if count == 1:
-                if j == 1:
-                    pass
-                else:
-                    primes.append(j)
+            if j not in primes:
+            	while num < j:
+                	if j%num == 0:
+                    		count += 1
+                	num += 1
+            	if count == 1:
+                	if j == 1:
+                    		pass
+                	else:
+                    		primes.append(j)
             count = 0
         #print(primes)
         c = 0
@@ -35,7 +38,17 @@ def solution(N, P, Q):
     #print(ans)
     return ans
                     
-                    
+    """ 
+	# Possible method to divide by prime number and check
+        c = 0
+        for k in range(higher):
+            if k not in primes:
+                for p in primes:
+                    res = k//p
+                    if res in primes:
+                        c += 1
+        ans.append(c)
+    """        
         
             
             
