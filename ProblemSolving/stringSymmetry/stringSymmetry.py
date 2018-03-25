@@ -1,5 +1,4 @@
-# Codility Problem - stringSymmetry - 100 percent
-# Reference to code says
+# Codility Problem - stringSymmetry
   
 # Go to the details, 
 ## 1. The string has to be of odd length for it to work
@@ -10,6 +9,8 @@
 def solution(S):
     n = len(S)
     
+    """
+    # No need of this logic when even check exist
     # Length of string being 1
     if n == 1:
         return 0
@@ -17,7 +18,7 @@ def solution(S):
     # Length of string being 0
     if n == 0:
         return 0
-        
+    """ 
     # Length of string being odd
     if n%2 == 0:
         return -1
@@ -45,4 +46,3 @@ def solution(S):
             return i
     return -1
     """
-
