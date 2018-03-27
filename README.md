@@ -41,7 +41,8 @@
 * [fiboModified](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/fiboModified)
 * [tieRope](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/tieRope)
 * [twoSums](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/twoSums)
-* [powerOf2](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/powerOf2) 
+* [powerOf2](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/powerOf2)
+* [iceCreamParlour-Hashtables](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/iceCreamParlour) 
 
 ### Programming Language 101s:
 
