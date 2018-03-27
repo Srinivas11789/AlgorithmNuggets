@@ -51,4 +51,4 @@
 ### Concepts:
 
 * [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
-* [Sorting] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sorting)
+* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sorting)
