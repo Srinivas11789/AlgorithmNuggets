@@ -18,7 +18,6 @@
 * [fiboModifiedCliq] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/fiboModifiedCliq)
 * [stringSymmetry] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/stringSymmetry)
 * [missingElement] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/missingElement)
-* [sorting] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sorting)
 * [twitt] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/twitt)
 * [FrogJmp] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/FrogJmp)
 * [countDiv] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/countDiv)
@@ -51,4 +50,5 @@
 
 ### Concepts:
 
-* [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts)
+* [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
+* [Sorting] (https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sorting)
