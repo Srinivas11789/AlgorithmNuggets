@@ -43,6 +43,7 @@
 * [twoSums](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/twoSums)
 * [powerOf2](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/powerOf2)
 * [iceCreamParlour-Hashtables](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/iceCreamParlour) 
+* [recursionDavisStaircase](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/recursionDavisStaircase)
 
 ### Programming Language 101s:
 
