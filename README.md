@@ -1,6 +1,6 @@
 # AlgorithmNuggets
 
-<img src="https://github.com/Srinivas11789/AlgorithmNuggets/blob/master/images/algorithm_nuggets.png" title="Logo">
+<img src="https://srinivas11789.github.io/AlgorithmNuggets/images/algorithm_nuggets.png" title="Logo">
 
 :stuck_out_tongue_winking_eye: PVZ walnuts++ == Nuggets<br>
 
