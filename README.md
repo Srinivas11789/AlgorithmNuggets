@@ -46,6 +46,8 @@
 * [recursionDavisStaircase](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/recursionDavisStaircase)
 * [bitManipulationLonelyInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/bitManipulationLonelyInteger)
 * [gradingStudents](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/gradingStudents)
+* [emailAddressCreator](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/emailAddressCreator)
+* [maxDisjointSetSum](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maxDisjointSetSum)
 
 ### Programming Language 101s:
 
