@@ -45,6 +45,7 @@
 * [iceCreamParlour-Hashtables](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/iceCreamParlour) 
 * [recursionDavisStaircase](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/recursionDavisStaircase)
 * [bitManipulationLonelyInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/bitManipulationLonelyInteger)
+* [gradingStudents](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/gradingStudents)
 
 ### Programming Language 101s:
 
