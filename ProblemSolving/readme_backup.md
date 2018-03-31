@@ -48,7 +48,6 @@
 * [gradingStudents](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/gradingStudents)
 * [emailAddressCreator](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/emailAddressCreator)
 * [maxDisjointSetSum](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maxDisjointSetSum)
-* [Apples&Oranges](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/Apples%26Oranges)
 
 ### Programming Language 101s:
 
