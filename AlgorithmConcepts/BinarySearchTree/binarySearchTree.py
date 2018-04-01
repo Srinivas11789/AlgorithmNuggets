@@ -62,9 +62,29 @@ def isBST(root):
 
 # Depth first search
 
+# Height of a binary search tree
+
+def heightBST(root):
+    
+    if root is None:
+       return -1
+    else:
+       return 1+max(heightBST(root.left), heightBST(root.right))
+
 # is a Balanced binary search tree
 
-# Height of a binary search tree
+def isBalancedBST(root):
+
+    if root is None:
+       return -1
+    else:
+       left_height = 1+isBalancedBST(root.left)
+       right_height = 1+isBalancedBST(root.right)
+       if abs(right_height - left_height) <= 1:
+          return 1
+       else:
+          return 0
+         
 
 # Maximum subtree 
 
@@ -93,7 +113,10 @@ def main():
     insert(root,1)
     insert(root,3)
     printBST(root)	
-    print find(root,3)
-    print find(root,5)
-    print isBST(root)
+    print "Is the node present in the binary search tree: "+str(find(root,3))
+    print "Is the node present in the binary search tree: "+str(find(root,5))
+    print "Is the BST balanced: "+str(isBST(root))
+    print "Height of the binary search tree is "+str(heightBST(root))
+    print "isBalanced Tree: "+str(isBalancedBST(root))
+
 main()
