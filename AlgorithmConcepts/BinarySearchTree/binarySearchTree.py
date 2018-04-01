@@ -46,6 +46,18 @@ def find(root, value):
 
 # isBinary Search Tree
 
+def isBST(root):
+    
+    if root.value > root.left.value and root.value < root.right.value:
+       return 1
+    else:
+       return 0
+
+    if root.left != None:
+       isBST(root.left)
+    if root.right != None:
+       isBST(root.right)
+
 # Breath first search
 
 # Depth first search
@@ -83,4 +95,5 @@ def main():
     printBST(root)	
     print find(root,3)
     print find(root,5)
+    print isBST(root)
 main()
