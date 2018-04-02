@@ -50,6 +50,9 @@
 * [maxDisjointSetSum](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maxDisjointSetSum)
 * [Apples&Oranges](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/Apples%26Oranges)
 * [kangaroo](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/kangaroo)
+* [lonelyInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/lonelyInteger)
+* [maximizingXor](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maximizingXor)
+
 
 ### Programming Language 101s:
 
