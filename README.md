@@ -53,7 +53,7 @@
 * [lonelyInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/lonelyInteger)
 * [maximizingXor](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maximizingXor)
 * [counterGame](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/counterGame)
-
+* [bfsShortestReach](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/bfsShortestReach)
 
 ### Programming Language 101s:
 
