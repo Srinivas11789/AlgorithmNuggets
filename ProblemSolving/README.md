@@ -49,6 +49,7 @@
 * [emailAddressCreator](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/emailAddressCreator)
 * [maxDisjointSetSum](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maxDisjointSetSum)
 * [Apples&Oranges](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/Apples%26Oranges)
+* [kangaroo](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/kangaroo)
 
 ### Programming Language 101s:
 
@@ -58,4 +59,5 @@
 ### Concepts:
 
 * [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
+* [Graphs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/Graphs)
 * [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sorting)
