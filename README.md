@@ -54,6 +54,11 @@
 * [maximizingXor](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maximizingXor)
 * [counterGame](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/counterGame)
 * [bfsShortestReach](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/bfsShortestReach)
+* [sherlockAndArray](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sherlockAndArray)
+* [missingNumber](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/missingNumber)
+* [camelCase](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/camelCase)
+* [sumVsXor](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sumVsXor)
+
 
 ### Programming Language 101s:
 
