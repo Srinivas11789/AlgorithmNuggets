@@ -73,4 +73,4 @@
 
 * [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
 * [Graphs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/Graphs)
-* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/AlgorithmConcepts/sorting)
+* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/sorting)
