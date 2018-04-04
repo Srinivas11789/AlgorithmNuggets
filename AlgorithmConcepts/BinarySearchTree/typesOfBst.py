@@ -49,6 +49,47 @@ def isFullBinarySearchTree(node):
 
 # Complete Binary Search Tree
 
+def numberOfNodes(node):
+    if node is None:
+       return 0
+    return (1 + numberOfNodes(node.left) + numberOfNodes(node.right))
+
+def completeBinarySearchTree(node, index, number_of_nodes):
+    """
+    # Method not complete, idea or outline only
+    # Goto to the deepest node
+    if node is None:
+	return True:
+    # Last level of nodes could have no children or some children aligned to the left
+     if not node.left or not node.right:
+       if node.left == None and node.right == None:
+          pass
+       else:
+          # Check for left alignment of nodes
+          return False
+    return completeBinarySearchTree(node.left) and completeBinarySearchTree(node.right)
+    """
+
+    # One method from Geek of Geek to keep track of index and the number of nodes
+
+    # Basically the idea of this method is to mark the nodes with indexes as follows
+    # * root = 3 = 0
+    #   * left = 1 = 1
+    #   * right = 4 = 2
+    # from left to right each node continues with 3,4,5
+    # With the total number of nodes known already, just tracking the indexes not to exceed or equal to one of the nodes is enough to hit a failure condition
+    # Outline is to get the total nodes and number each nodes from left to right to track it thus the second property of left heavy tree or leaves in the last level all are to the left side passes including the no leaf condition as well
+
+    # Deepest level when node becomes none
+    if node is None:
+	return True
+    # if the index is more than the total number of nodes in the tree
+    if index >= number_of_nodes:
+        return False
+    print index, node.value
+    return (completeBinarySearchTree(node.left, 2*index+1, number_of_nodes)) and (completeBinarySearchTree(node.right, 2*index+2, number_of_nodes))
+    
+
 # Perfect Binary Search Tree
 
 # Balanced Binary Search Tree
@@ -60,7 +101,12 @@ def main():
     root.left.right = node(2)
     root.right = node(4)
     #root.right.right = node(5)
-    #root.right.left = node(3)
+    root.right.left = node(3)
     print isFullBinarySearchTree(root)
+
+    # Complete BST
+    n = numberOfNodes(root)
+    print n
+    print completeBinarySearchTree(root, 0, n)
 
 main()
