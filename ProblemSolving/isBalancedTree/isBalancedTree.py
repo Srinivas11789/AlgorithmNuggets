@@ -1,5 +1,7 @@
 # Binary Search Tree
 
+# This solution is not correct
+
 #### Class Node to hold the structure of each node
 
 class node:
