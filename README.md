@@ -58,6 +58,10 @@
 * [missingNumber](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/missingNumber)
 * [camelCase](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/camelCase)
 * [sumVsXor](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sumVsXor)
+* [flippingBits](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/flippingBits)
+* [hackerrankInString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/hackerRankInString)
+* [caesarCipher](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/caesarCipher)
+* [pangram](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/pangram)
 
 
 ### Programming Language 101s:
@@ -69,4 +73,4 @@
 
 * [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
 * [Graphs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/Graphs)
-* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sorting)
+* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/AlgorithmConcepts/sorting)
