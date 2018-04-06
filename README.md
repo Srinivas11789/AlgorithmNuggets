@@ -61,7 +61,15 @@
 * [flippingBits](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/flippingBits)
 * [hackerrankInString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/hackerRankInString)
 * [caesarCipher](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/caesarCipher)
-* [pangram](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/pangram)
+* [luckBalance](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/pangram)
+* [sherlockNBeast](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/luckBalance)
+* [beautifulPairs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/beautifulPairs)
+* [coursePlan](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/coursesOrder)
+* [jimAndOrder](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/jimAndOrder)
+* [phrasesearch](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/phraseSearch)
+* [anagrams](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/anagram)
+* [rectangleIntersection](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/rectangleIntersect)
+* [keypadCombinations](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/keypadCombination)
 
 
 ### Programming Language 101s:
