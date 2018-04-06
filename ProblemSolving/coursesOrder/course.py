@@ -24,8 +24,12 @@ def coursePlan(all_courses, pre_req):
                         if d in prereq:
                            while k == 0:
                                  if course in prereq[temp]:
-                                    
-                                  
+                                    return []
+                                 for z in prereq[temp]:
+                                    if z in prereq:
+                                       if course in prereq[z]:
+                                    	  return []
+                                 
                 	if d not in result:
 				result.append(d)
         if course not in result:
