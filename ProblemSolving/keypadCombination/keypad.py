@@ -3,12 +3,20 @@
 """
 Key pad and combinations
 """
-
+import itertools
 def keypadCombinations(num):
 
     # ds with keys are (relationship datastructure)
     keys = [['+'],[''],['A','B','C'],['D','E','F'],['G','H','I'],['J','K','L'],['M','N','O'],['P','Q','R','S'],['T','U','V'],['W','X','Y','Z']]
+  
+    # Easy method - using itertools 
+    select = []
+    for n in num:
+        select.append(keys[n])
+    for comb in itertools.product(*select):
+        print "".join(comb)
 
+    """
     # total combination
     total = 1
     for item in num:
@@ -40,7 +48,7 @@ def keypadCombinations(num):
                         c += 1
                         k += 1
     print result
-
+    """
 
 
 def main():
