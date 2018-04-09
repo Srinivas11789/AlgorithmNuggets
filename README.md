@@ -70,7 +70,15 @@
 * [anagrams](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/anagram)
 * [rectangleIntersection](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/rectangleIntersect)
 * [keypadCombinations](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/keypadCombination)
-
+* [superReducedString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/superReducedString)
+* [strongPassword](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/strongPassword)
+* [marsExploration](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/marsExploration)
+* [courseOrder](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/courseOrder)
+* [migratingBirds](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/migratingBirds)
+* [bonAppetit](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/bonAppetit)
+* [closestNumbers](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/closestNumbers)
+* [gameOfThrones](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/gameOfThrones)
+* [twoStrings](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/twoStrings)
 
 ### Programming Language 101s:
 
