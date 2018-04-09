@@ -5,6 +5,7 @@ import sys
 def twoStrings(s1, s2):
     
     # 4 and 5 timeout, all other pass... Using set() eradicates the duplicates hence passes everything
+    # could also use string.intersection function
     for c in set(s1):
         if c in s2:
             return "YES"
