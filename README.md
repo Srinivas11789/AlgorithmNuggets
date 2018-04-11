@@ -79,6 +79,16 @@
 * [closestNumbers](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/closestNumbers)
 * [gameOfThrones](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/gameOfThrones)
 * [twoStrings](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/twoStrings)
+* [stringConstruction](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/stringConstruction)
+* [sherlockAndValidString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sherlockAndValidString)
+* [palindromeIndex](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/palindromeIndex)
+* [perfectBinaryString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/perfectBinaryString)
+* [loveLetterMysteryMakePalindrome](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/loveLetterMysteryMakePalindrome)
+* [funnyString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/funnyString)
+* [isPalindromeInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/isPalindromeInteger)
+* [removeDuplicatesSortedArray](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/removeDuplicatesSortedArray)
+* [removeElement](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/removeElement)
+* [reverseInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/reverseInteger)
 
 ### Programming Language 101s:
 
