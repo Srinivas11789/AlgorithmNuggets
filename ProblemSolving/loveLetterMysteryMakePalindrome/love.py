@@ -1,3 +1,12 @@
+"""
+# make Palindorme program - thought and tried around for 1 hours but later was able to solve in 5 mins
+* Tips:
+- Be ready to erase away the logic and try writing again instead of iterating over the same same logic or loop. Keep making random or greater changes to innovate new logic
+- Have each structured steps of the problem in mind and solve each case
+- Burn down the problem into the fundamentals and solve from there
+- clearly implement the logic of each step as you proceed with the problem
+- understand the problem, think clear, implement logic, change logic and iterate...
+"""
 #!/bin/python
 
 import sys
