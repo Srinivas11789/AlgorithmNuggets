@@ -8,7 +8,18 @@
 **:eyes::blue_book::pencil::thought_balloon::blue_book: Research, Study and Learning of Algorithms**
 
 * Basic Algorithm programs updated each day
-* Problem Solving Algorithm Programs from HackerRank or Leetcode or Codechef or Codility
+* Problem Solving Algorithm Programs from HackerRank or Leetcode or Codechef or Codility or CareerCup
+
+### Programming Language 101s:
+
+* [Python](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/Python)
+* [Go Lang](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/Go%20Lang)
+
+### Concepts:
+
+* [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
+* [Graphs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/Graphs)
+* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/sorting)
 
 ### Problem Solving:
 
@@ -100,14 +111,3 @@
 * [addBinary](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/addBinary)
 * [squareRoot](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/squareRoot)
 * [climbStairs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/climbStairs)
-
-### Programming Language 101s:
-
-* [Python](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/Python)
-* [Go Lang](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/Go%20Lang)
-
-### Concepts:
-
-* [BinarySearchTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/BinarySearchTree)
-* [Graphs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/Graphs)
-* [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/sorting)
