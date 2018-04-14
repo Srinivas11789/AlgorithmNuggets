@@ -89,6 +89,17 @@
 * [removeDuplicatesSortedArray](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/removeDuplicatesSortedArray)
 * [removeElement](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/removeElement)
 * [reverseInteger](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/reverseInteger)
+* [needleHayStack](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/needleHayStack)
+* [romanToNumeral](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/romanToNumeral)
+* [gemStones](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/gemStones)
+* [alternateCharacters](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/alternateCharacters)
+* [minMaxSum](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/minMaxSum)
+* [stairCase](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/stairCase)
+* [lengthOfLastWord](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/lengthOfLastWord)
+* [plusOne](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/plusOne)
+* [addBinary](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/addBinary)
+* [squareRoot](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/squareRoot)
+* [climbStairs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/climbStairs)
 
 ### Programming Language 101s:
 
