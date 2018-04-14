@@ -1,3 +1,4 @@
+#### Practice this easy problem in GO as well by today
 class Solution(object):
     def numJewelsInStones(self, J, S):
         """
