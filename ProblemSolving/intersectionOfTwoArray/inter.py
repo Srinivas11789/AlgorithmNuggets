@@ -5,7 +5,17 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
+        
+        # alternative small solution from discussions
+        
+        # Given a list of integers, use set to eradicate duplicates
+        nums1 = set(nums1)
+        nums2 = set(nums2)
+        
+        return list(nums1 & nums2)
+        
 
+        """
         str1 = "".join(str(i) for i in nums1) 
         str2 = "".join(str(i) for i in nums2)
         if str1 == str2:
@@ -20,4 +30,4 @@ class Solution(object):
                 if num in nums2:
                     result.add(num)
             return list(result)
-
+        """
