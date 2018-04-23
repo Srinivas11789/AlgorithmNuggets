@@ -1,4 +1,20 @@
+### Lt easy - power of 2 - 100 pass
 
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        
+        while n > 1 and n%2 == 0:
+            n = n//2
+        
+        if n == 1:
+            return True
+        else:
+            return False
+            
 
 def pow2(n):
 	if n%2 == 0:
@@ -14,3 +30,6 @@ def main():
  	print pow2(n)
 
 main()
+
+
+
