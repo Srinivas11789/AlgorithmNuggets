@@ -116,6 +116,31 @@
 * [uniqueMorseCodeWords](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/uniqueMorseCodeWords)
 * [nextGreaterElementI](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/nextGreaterElementI)
 * [nextGreaterElementII](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/nextGreaterElementII)
+* [happyNumber](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/happyNumber)
+* [uglyNumber](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/uglyNumber)
+* [findTheDifference](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/findTheDifference)
+* [longestWordDictionary](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/longWordDictionary)
+* [sumIntegerWithoutPlus](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sumIntegerWithoutPlus)
+* [intersectionOfTwoArray](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/intersectionOfTwoArray)
+* [intersectionOfTwoArrayII](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/intersectionOfTwoArrayII)
+* [constructStringFromBinaryTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/constructStringFromBinaryTree)
+* [addTwoNumbersLinkedList](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/addTwoNumbersLinkedList)
+* [addStrings](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/addStrings)
+* [maxHeightBst](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/maxHeightBst)
+* [minHeightBst](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/minHeightBst)
+* [sameTree](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sameTree)
+* [intersectionOfTwoLinkedList](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/intersectionOfTwoLinkedList)
+* [powerOf2](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/powerOf2)
+* [wordPattern](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/wordPattern)
+* [isomorphicString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/isomorphicString)
+* [firstUniqueCharacterInString](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/firstUniqueCharacterInString)
+* [sortCharactersByFrequency](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/sortCharactersByFrequency)
+* [guessNumberHigherLower](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/guessNumberHigherLower)
+* [firstBadVersion](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/firstBadVersion)
+* [searchInsertPosition](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/searchInsertPosition)
+* [numberComplement](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/numberComplement)
+
+
 
 
 
