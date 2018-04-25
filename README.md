@@ -111,7 +111,7 @@
 * [addBinary](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/addBinary)
 * [squareRoot](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/squareRoot)
 * [climbStairs](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/climbStairs)
-* [jewelAndStone](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/jewelAndStone)
+* [jewelAndStones](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/jewelAndStones)
 * [setMismatch](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/setMismatch)
 * [uniqueMorseCodeWords](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/uniqueMorseCodeWords)
 * [nextGreaterElementI](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/nextGreaterElementI)
