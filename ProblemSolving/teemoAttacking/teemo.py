@@ -21,6 +21,7 @@ class Solution(object):
         return total
         """
         
+        """
         # Just find if they are overlapping sets or not logic
         # Original Thought but confused Implementation - in reference with a dicussion solution
     
@@ -58,8 +59,36 @@ class Solution(object):
         result += end - start
         
         return result
-                
+        """
+       
+    
+        ## Another easy logic of taking diff between current and previous entry and reasoning from there for overlap or not
+        
+        # Checking for empty condition
+        if timeSeries:
             
+            # Result
+            result = 0
+            n = len(timeSeries)
+            
+            # Iterate from 1 in the list to take diff of the previous entry
+            for i in range(1,n):
+                
+                # Calculate diff of the current and previous entry
+                diff = timeSeries[i] - timeSeries[i-1]
+                
+                # diff being greater it becomes ok to add the duration for sure
+                if diff >= duration:
+                    result += duration
+                else:
+                # Diff being lesser we add diff and move on
+                    result += diff
+                    
+            # add duration again after the loop to calculate the last duration add
+            result += duration
+            return result
+        else:
+            return 0
             
             
             
