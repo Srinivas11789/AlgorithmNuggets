@@ -1,3 +1,5 @@
+####### is_integer is a good extension of float to verify whether the float number is integer or not
+
 #!/bin/python
 
 import sys
