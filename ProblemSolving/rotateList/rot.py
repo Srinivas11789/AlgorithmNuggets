@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: ListNode
         """
         
-        # Nice logic - Make the list a circular list and perform the operations
+        # 100 pass - Nice logic - Make the list a circular list and perform the operations
         
         # Only head handle
         if not head:
@@ -32,11 +32,11 @@ class Solution(object):
             length += 1
             first = first.next
 
-        # Make k within the range of the list length
+        # Make k within the range of the list length - to find where to make the break
         k = (length-k)%length
 
         if k == 0:
-            # Break the circularity before returning
+            # Break the circularity before returning - the output was iterating through the list, this caused the return to go through a loop as the list was made circular by default while reading the list. Fixing with this logic worked.
             return head
         else:
             # Make it a circular list
