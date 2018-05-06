@@ -27,7 +27,8 @@ class Solution(object):
         return -1
         """
         
-        # Alternate from discussions
+        """
+        # 100 pass - Alternate from discussions yecyec
         
         # Sort the houses and heaters
         heaters = sorted(heaters)
@@ -49,8 +50,26 @@ class Solution(object):
             else:
                 radius = max(radius, min(heaters[i] - house, house- heaters[i-1]))
         return radius
+        """
+        
+        # 100 pass - nice understandable Solution from discussion by Jonathan82 - Smaller
+        # Find the distance from the heater for each house and get the maximum from the results
+        
+        # Sort the houses and heaters
+        heaters.sort()
+        houses.sort()
+        
+        # Variable declaration
+        radius = i = 0
+        
+        for house in houses:
+            # Move from one heater to the next with absolute differences - at any point i has the closest heater to the house
+            while i+1 < len(heaters) and abs(heaters[i+1]-house) <= abs(heaters[i]-house):
+                i += 1
+            # To obtain the maximum distance that have to be covered by a heater
+            radius = max(radius, abs(heaters[i] - house))
+        return radius
     
- ################# Pending to understand and explore more 
                 
         
         
