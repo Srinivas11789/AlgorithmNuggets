@@ -1,3 +1,5 @@
+# Try doing the same in o(1) space combined within list 1
+
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -11,6 +13,9 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+
+	# Using an extra new list declared
+
         if not l1 and not l2:
             return []
         if not l1:
