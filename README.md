@@ -166,6 +166,9 @@
 * [selfDividingNumbers](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/selfDividingNumbers)
 * [perfectNumber](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/perfectNumber)
 
+### Links and References:
+* Leetcode - https://leetcode.com/srinivas11789/
+* HackerRank - https://www.hackerrank.com/spg349
 
 
 
