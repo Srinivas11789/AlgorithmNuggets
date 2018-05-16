@@ -1,4 +1,3 @@
-# Pending....
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
         """
@@ -6,6 +5,22 @@ class Solution(object):
         :type K: int
         :rtype: str
         """
+        
+        # 100pass -Proper short smart thinking soltuion - reverse the string and operate
+        
+        # Remove all the "-" and reverse the string
+        S = S.replace("-","")[::-1]
+        
+        # Split string based on the length
+        result = []
+        for i in range(0,len(S),K):
+            result.append(S[i:i+K].upper())
+        return "-".join(result)[::-1]
+            
+        
+        
+        """
+        # logic missing for initial key0 calculation with proper formatting of remaining string
         
         import re
         
@@ -40,6 +55,7 @@ class Solution(object):
             kSplit = [keys[0].upper()+subString[:len(subString)%K].upper()]
             kSplit.extend(re.findall("."*K, subString[len(subString)%K:].upper()))
             return "-".join(kSplit)
+        """
             
         
         
