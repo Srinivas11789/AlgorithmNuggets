@@ -230,5 +230,6 @@
 * Leetcode - https://leetcode.com/srinivas11789/
 * HackerRank - https://www.hackerrank.com/spg349
 
+[![Analytics](https://ga-beacon.appspot.com/UA-119898499-1/AlgorithmNuggets)](https://github.com/igrigorik/ga-beacon)
 
 
