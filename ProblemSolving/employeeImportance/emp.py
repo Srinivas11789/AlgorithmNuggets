@@ -62,7 +62,7 @@ class Solution(object):
         while len(sub) > 0:
                 priority += direc[sub.pop()].importance
                     
-        return test
+        return priority
                 
         """
         #brute force - with a list
