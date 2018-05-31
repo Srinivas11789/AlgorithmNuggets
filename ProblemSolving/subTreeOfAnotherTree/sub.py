@@ -40,9 +40,11 @@ class Solution(object):
         # Iterate through the nodes of tree1 and perform inOrderTraversal of VALUES for each node as root and match with the tree2 VALUES 
         for node in values1:
             value = []
-            inOrder(node, value, 0)
-            if value == values2:
-                return True
+            # Reduces the recursion and speeds up
+            if node.val == t.val:
+                inOrder(node, value, 0)
+                if value == values2:
+                    return True
         return False
         
         
