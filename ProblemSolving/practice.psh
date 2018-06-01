@@ -1,0 +1,30 @@
+foreach	($port	in	(53,67,123,135,137,138,161,445,631,1434))	
+{
+			Write-Host	"Port:	---->	$port";	
+			for	($i=1;$i	-lt	15;$i++)	
+Srinivas Piskala Ganesh Babu – spg349 and N13138339
+			{
+					$ip	=	"192.168.1.$i";
+					$socket	=	New-Object	system.Net.Sockets.Udpclient;
+					$payload	=	(New-Object	system.text.asciiencoding).GetBytes("XXXX");
+					$socket.Client.ReceiveTimeout=1000;
+					[void]$socket.Send($payload,	$payload.length,$ip,$port);
+					$receiver=New-Object	system.net.ipendpoint([system.net.ipaddress]::Any,0);	
+					Try	
+					{
+							$receive_payload=$socket.Receive([ref]$receiver)
+					}	
+					Catch	
+					{
+						$receive_payload	=	$($Error[0])
+					};
+						if	($receive_payload	-like	"*did*not*respond*")	
+						{
+							Write-Host	"IPAddress:	$ip,	Open|Filtered"
+							};	
+						if	($receive_payload	-like	"*forcibly*closed*")	
+						{
+								Write-Host	"IPAddress:	$ip,	Closed"
+						}	
+}
+}
