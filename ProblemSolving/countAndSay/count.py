@@ -1,5 +1,67 @@
-# Still working on it -- pending
-
+# Two Pointer Technique - 100 pass
+class Solution(object):
+    def countAndSay(self, n):
+        """
+        :type n: int
+        :rtype:str
+        """
+        
+        # 1 11 21 
+        
+        total = 1
+        start = ["1"]
+        
+        while total < n:
+            
+            prev = start[-1]
+            init = 0
+            move = 1
+            ans = ""
+            
+            while init < len(prev):
+                
+                current_count = 1
+                
+                while move < len(prev) and prev[init] == prev[move]:
+                    current_count += 1
+                    move += 1
+                current_count = str(current_count)
+                ans += current_count
+                ans += prev[init]
+                init = move
+                move += 1
+            start.append(ans)
+            total += 1
+        
+        print start
+        return start[-1]
+        
+        
+        """
+        i = 1
+        memo = [["1"]]
+        while i < n:
+            current = memo[-1]
+            j = 0
+            memo.append([])
+            count = 1
+            # Logic for counting the sequence
+            while j < len(current):
+                print i,count
+                if j == len(current)-1:
+                    if current[j] == current[j-1]:
+                        count += 1
+                    memo[-1].append(str(count)+current[j])
+                elif current[j] == current[j+1]:
+                    count += 1
+                elif current[j] != current[j+1]:
+                    memo[-1].append(str(count)+current[j])
+                    count = 1
+                j += 1
+            i += 1
+            print memo
+        return "".join(memo[-1])
+        """
 """
 class Solution(object):    
     
