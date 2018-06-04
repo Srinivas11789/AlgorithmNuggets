@@ -1,13 +1,55 @@
-### Pending...
-
-
 class Solution(object):
     def compress(self, chars):
         """
         :type chars: List[str]
         :rtype: int
         """
+        # 100 pass
+        # Logic - Returning the count is enough, no need to pop the array and substitution + required count would work
+        # Overwrite the array as we traverse and donot pop or delete anything
+        # Reference from user javaleg
         
+        n = len(chars)
+        
+        # as in example 2
+        if n <= 1:
+            return 1
+        
+        # 2 pointer technique
+        init = 0
+        move = 1
+        
+        total_count = 1
+        
+        while move < n:
+            current_count = 1
+            
+            # Count the number of similarities
+            while move < n and chars[move] == chars[init]:
+                move += 1
+                current_count += 1
+            
+            # Count of 1 should be ignored
+            if current_count > 1:
+                # Count characters should be appened separately
+                current_count = str(current_count)
+                for ch in current_count:
+                    init += 1
+                    chars[init] = ch
+                    total_count += 1
+            
+            # The next character
+            init += 1
+            # Move is at the next diff char
+            if move < n:
+                chars[init] = chars[move]
+                total_count += 1
+                move += 1
+        
+        return total_count
+  
+        
+        """
         i = 0
         select = None
         while i < len(chars):
@@ -30,8 +72,7 @@ class Solution(object):
                 chars = chars[:index+1]+list(str(count))
         
         return len(chars) 
-        
-    
+        """
         
         """
         # Compress string with ["Char", "no of times it occured"] - Fails some cases
