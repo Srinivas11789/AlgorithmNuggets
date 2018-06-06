@@ -9,6 +9,7 @@ class Solution(object):
         # 1. At each step, the next step could be one or two steps ahead
         # 2. Looking from backwards, at each step the cost incurred for that location is the minimum(-1,-2)
         #    Iterting to calculate all the minimum cost progressively will give the last 2 elements of the array or the top stack of steps from where you can jump to the top of the stairs in one or 2 step
+        # reference from AristoChen leetcode discussions 
         
         
         # Starting at 2 because both 1 and 2 can be considered for jumping
