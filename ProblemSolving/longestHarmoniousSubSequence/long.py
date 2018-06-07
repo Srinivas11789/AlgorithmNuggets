@@ -4,11 +4,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+
+        # Make a dictionary to track the frequency of the characters
         import collections
         db = collections.Counter(nums)
         
+	# Maximum to be zero
         maxi = 0
         
+	# Iterate through the DB to check for difference of +1 or -1 and add their frequencies to check for maximum
         for k,v in db.items():
             if k-1 in db:
                 maxi = max(maxi, db[k-1]+db[k])
