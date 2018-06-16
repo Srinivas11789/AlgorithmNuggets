@@ -13,11 +13,11 @@ class Solution(object):
         if n == 1:
             return True
         
-        # Iterate to the point of first indifference of a nondecreasing array
+        # Iterate to the point of first failure of a nondecreasing array
         for i in range(0,n-1):
-            # Indifference of non-decreasing
+            # failure of non-decreasing sceanrio
             if nums[i] > nums[i+1]:
-                # At the point of such an indifference, consider both the elements
+                # At the point of such an failure, consider both the elements
                 # With removing first element i
                 select = nums[:i]+nums[i+1:]
                 # With removing the next element i+1
@@ -30,7 +30,6 @@ class Solution(object):
                 else:
                     return False
         return True
-
 
         """      
         count = 0
