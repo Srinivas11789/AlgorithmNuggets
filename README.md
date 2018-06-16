@@ -232,4 +232,6 @@
 
 [![Analytics](https://ga-beacon.appspot.com/UA-119898499-1/AlgorithmNuggets/README.md)](https://github.com/igrigorik/ga-beacon)
 
+### Reference:
+* Images - https://illustation16.deviantart.com/gallery/
 
