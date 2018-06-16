@@ -6,6 +6,33 @@ class Solution(object):
         :rtype: bool
         """
        
+        # 100 pass logic
+        n = len(nums)
+        
+        # Length is One Handle
+        if n == 1:
+            return True
+        
+        # Iterate to the point of first indifference of a nondecreasing array
+        for i in range(0,n-1):
+            # Indifference of non-decreasing
+            if nums[i] > nums[i+1]:
+                # At the point of such an indifference, consider both the elements
+                # With removing first element i
+                select = nums[:i]+nums[i+1:]
+                # With removing the next element i+1
+                select1 = nums[:i+1]+nums[i+2:]
+                # Compare the sorted array with selected
+                if select == sorted(select):
+                    return True
+                elif select1 == sorted(select1):
+                    return True
+                else:
+                    return False
+        return True
+
+
+        """      
         count = 0
         n = len(nums)
         for i in range(1,n-1):
@@ -15,7 +42,7 @@ class Solution(object):
             return False
         else:
             return True
-                
+        """     
  
         """
         # Working half the way
