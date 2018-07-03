@@ -37,40 +37,42 @@ class Solution(object):
         return int(S)
         """
         
-        # Stack Method
+        # Stack Method - 100 pass
+        
+        # String iterator
         Slist = list(S)
-        # Only round brackets are present
+        # stack
+        stack = []
+        
+        # Only round brackets are present so no need for a dictionary
+        
+        # Control variables
         n = len(Slist)
         result = 0
         i = 0
+        
         while i < n:
+            print i
             if Slist[i] == ")":
-                j = i-1
-                while "(" != Slist[j]:
-                    j -= 1
-                diff = i-j
-                if diff == 1:
-                    S[j] = 1
-                    S.pop(i)
-                    i = j - 1
-                elif diff == 2:
-                    mid = 2*int(S[j+1])
-                    S[j] = mid
-                    S.pop(j+1)
-                    S.pop(j+1)
-                    i = j - 1
+                if stack[-1] == "(":
+                    stack.pop()
+                    stack.append(1)
+                elif type(stack[-1]) is int and stack[-2] == "(":
+                    num = stack.pop()
+                    stack.pop()
+                    stack.append(num*2)
                 else:
-                    mid = S[j+1:i]
-                    s = 0
-                    for m in mid:
-                        s += int(m)
-                    S[j+1] = s
-                    k = j+2
-                    while S[k] != ")":
-                        S.pop(k)
-                    i = j - 1
-            print S
-        return S
+                    sumi = stack.pop()
+                    while type(stack[-1]) is int:
+                        sumi += stack.pop()
+                    stack.pop()
+                    stack.append(2*sumi)
+            else:
+                stack.append(Slist[i])
+            print stack
+            i += 1
+                
+        return sum(stack)
                         
                     
                     
