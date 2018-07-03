@@ -1,7 +1,7 @@
 
-
+# Leetcode Medium - Letter combinations of a phone number 
 """
-Key pad and combinations
+Key pad and combinations - cm ques
 """
 import itertools
 def keypadCombinations(num):
@@ -56,3 +56,22 @@ def main():
     keypadCombinations(num)
 
 main()
+
+
+"""
+#### Leecode - letter combinations of a phone number question - medium - 100 pass
+        import itertools
+        keys = [['+'],[''],['a','b','c'],['d','e','f'],['g','h','i'],['j','k','l'],['m','n','o'],['p','q','r','s'],['t','u','v'],['w','x','y','z']]
+        select = []
+        result = []
+        
+        for n in digits:
+            select.append(keys[int(n)])
+    
+        if len(select) == 0:
+            return []
+        
+        for comb in itertools.product(*select):
+            result.append("".join(comb))
+        return result
+"""
