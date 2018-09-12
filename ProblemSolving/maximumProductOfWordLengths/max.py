@@ -1,4 +1,3 @@
-# Pending...
 class Solution(object):
     def maxProduct(self, words):
         """
@@ -6,21 +5,40 @@ class Solution(object):
         :rtype: int
         """
         
-        # Brute Force: Correct Logic - Time Limit Exceeded!
-        def intersection(w1,w2):
-            for char in w1:
-                if char in w2:
-                    return False
-            return True
+        # Dictionary solves with the similar logic below
+        dictionary = {}
+        for w in words:
+            dictionary[w] = set(w)
         
         n = len(words)
-        maxi = 0 # default value
+        maxi = 0
+        
         for i in range(n):
             for j in range(i+1,n):
-                if i != j and not set(words[i]).intersection(set(words[j])):#intersection(words[i], words[j]):
-                    prod = len(words[i])*len(words[j])
-                    maxi = max(prod, maxi)
-        return maxi
-    
+                if not dictionary[words[i]].intersection(dictionary[words[j]]):
+                    maxi = max(maxi, len(words[i])*len(words[j]))
+        return maxi 
         
+        
+        """
+        # Naive method - Time limit exceeded
+        def commonCheck(str1, str2):
+            if set(str1).intersection(set(str2)):
+                return False
+            else:
+                return True
+            
+        
+        n = len(words)
+        maxi = -6000000
+        for i in range(n):
+            for j in range(i+1,n):
+                if commonCheck(words[i], words[j]):
+                    prod = len(words[i])*len(words[j])
+                    if prod > maxi:
+                        maxi = prod
+        if maxi == -6000000:
+            maxi = 0
+        return maxi
+        """
                     
