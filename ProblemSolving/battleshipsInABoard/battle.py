@@ -1,3 +1,6 @@
+# A little weak with 2d and 3d stuff
+# Reference: https://leetcode.com/problems/battleships-in-a-board/discuss/166582/simple-6-line-Python-solution-with-explanation%3A-one-pass-O(1)-space-no-modification
+#
 class Solution(object):
     def countBattleships(self, board):
         """
