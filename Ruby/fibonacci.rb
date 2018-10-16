@@ -1,3 +1,4 @@
+#Fibonacci program
 def fibonacci(n)
     a = 0
     b = 1
@@ -13,8 +14,9 @@ def fibonacci(n)
     return a
 end
 
-# Write first 15 Fibonacci numbers in sequence.
-15.times do |n|
-    result = fibonacci(n)
-    puts result
-end
+# Write Fibonacci numbers in sequence as per the userinput.
+puts "Enter the number:"
+userinput = gets.chomp.to_i
+result = fibonacci(userinput)
+puts result
+
