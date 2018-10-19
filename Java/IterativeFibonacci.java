@@ -14,19 +14,14 @@ public class IterativeFibonacci{
 		iterativeFibonacci(range);
 	}
 	
-	public static void iterativeFibonacci(int range){
-		int a=0,b=1,sum=0;
-		System.out.print(0+","+1+",");
-		while(true){
-			sum=a+b;
+	public static void iterativeFibonacci(int range){		
+	    int a=0,b=1,sum=0;
+		System.out.print(0+" "+1);
+		while((a+b)<=range){
+			sum = a+b;
 			a=b;
 			b=sum;
-			//If next number exceeds the range then exit.
-			if((sum+b)>range){
-				System.out.print(sum);
-				return;
-			}
-			else System.out.print(sum+",");
+			System.out.print(" "+ sum);
 		}
 	}
 }
