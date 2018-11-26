@@ -10,9 +10,14 @@ class Solution(object):
         # * pop() to remove
         
         n = len(pushed)
-        m = len(popped)
+        
+        # Create a separate stack list to perform push, pop operation
         stack = []
         
+        # Simulate stack operations 
+        # * start by pushing elements as we iterate
+        # * When the last element pushed is equal to the first element in the popped list, remove the element from both the lists
+        # * Perform the above step until the lists are empty or the last elements is not equal
         i = 0
         while i < n:
             stack.append(pushed[i])
@@ -21,8 +26,8 @@ class Solution(object):
                 popped.pop(0)
             i += 1
             
+        # If stack is empty the stack operation is a success
         if stack:
             return False
         else:
             return True
-            
