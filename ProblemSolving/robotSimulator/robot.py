@@ -18,6 +18,8 @@ class Solution(object):
         # Facing +y direction initially (Initial direction along the +y axis)
         facing_direction = "y"
         
+        euc_distance = 0
+        
         # Go through each command 
         for com in commands:
             # Direction logic
@@ -38,7 +40,7 @@ class Solution(object):
                         facing_direction = "-y"
                     elif com == -2:
                         facing_direction = "y"
-                else:
+                elif facing_direction == "-x":
                     if com == -1:
                         facing_direction = "y"
                     elif com == -2:
@@ -49,15 +51,20 @@ class Solution(object):
                     # Increment movement
                     if "x" in facing_direction:
                         if "-" in facing_direction:
-                            x -= 1
+                            if [x-1, y] not in obstacles:
+                                x -= 1
                         else:
-                            x += 1
+                            if [x+1, y] not in obstacles:
+                                x += 1
                     else:
                         if "-" in facing_direction:
-                            y -= 1
+                            if [x, y-1] not in obstacles:
+                                y -= 1
                         else:
-                            y += 1
+                            if [x, y+1] not in obstacles:
+                                y += 1
                 
+                    """
                     # While the robot is moving check for obstacles on the way
                     if [x, y] in obstacles:
                         if "x" in facing_direction:
@@ -71,8 +78,10 @@ class Solution(object):
                             else:
                                 y -= 1
                         break
-            print x,y            
-        return x**2 + y**2
+                    """
+            euc_distance = max(euc_distance, x**2 + y**2)    
+            print euc_distance
+        return euc_distance
         
         # Logic1: Image a x-y axis graph with 4 quadrants, start at 0,0 (maintain x and y as we proceed), stop at obstacle and continue with the next step
         """
