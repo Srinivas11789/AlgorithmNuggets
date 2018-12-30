@@ -6,6 +6,16 @@ class Solution(object):
         :rtype: int
         """
         
+        # This is a very uncleaned logic - Pending on working for cleaned up logic....
+        # Dictionary Logic
+        
+        obstacle = {}
+        for obs in obstacles:
+            obstacle[(obs[0], obs[1])] = 1
+        #print obstacle
+        
+        
+        # Logic works but time limited exceeded for some reason, Reason: Searching through a big list is time expenive, so convert obstacle into a dictionary - logic above fixes this
         # Logic2: 
         # * Have a direction logic - to decide on facing direction
         # * Obstacle detecting logic
@@ -51,18 +61,30 @@ class Solution(object):
                     # Increment movement
                     if "x" in facing_direction:
                         if "-" in facing_direction:
-                            if [x-1, y] not in obstacles:
+                            if (x-1, y) not in obstacle:
                                 x -= 1
+                                euc_distance = max(euc_distance, x**2 + y**2)
+                            else:
+                                break
                         else:
-                            if [x+1, y] not in obstacles:
+                            if (x+1, y) not in obstacle:
                                 x += 1
+                                euc_distance = max(euc_distance, x**2 + y**2)
+                            else:
+                                break
                     else:
                         if "-" in facing_direction:
-                            if [x, y-1] not in obstacles:
+                            if (x, y-1) not in obstacle:
                                 y -= 1
+                                euc_distance = max(euc_distance, x**2 + y**2)
+                            else:
+                                break
                         else:
-                            if [x, y+1] not in obstacles:
+                            if (x, y+1) not in obstacle:
                                 y += 1
+                                euc_distance = max(euc_distance, x**2 + y**2)
+                            else:
+                                break
                 
                     """
                     # While the robot is moving check for obstacles on the way
@@ -78,10 +100,9 @@ class Solution(object):
                             else:
                                 y -= 1
                         break
-                    """
-            euc_distance = max(euc_distance, x**2 + y**2)    
-            print euc_distance
+                    """    
         return euc_distance
+        
         
         # Logic1: Image a x-y axis graph with 4 quadrants, start at 0,0 (maintain x and y as we proceed), stop at obstacle and continue with the next step
         """
