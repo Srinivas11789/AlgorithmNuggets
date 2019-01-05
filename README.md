@@ -22,6 +22,7 @@
 * [Sorting](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/AlgorithmConcepts/sorting)
 
 ### Problem Solving:
+Has all the problem solving question solution (mostly in python, updating in different languages are welcome!)
 
 * [Balanced Brackets](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/BalancedBrackets)
 * [equiLeader](https://github.com/Srinivas11789/AlgorithmNuggets/tree/master/ProblemSolving/equiLeader)
@@ -230,6 +231,11 @@
 * Ruby
 * Java
 * Swift
+
+### Commit Information
+* Every commit has a key called 
+  - lt => leetcode
+  - hr => hackerrank
 
 ### Links and References:
 * Leetcode - https://leetcode.com/srinivas11789/
