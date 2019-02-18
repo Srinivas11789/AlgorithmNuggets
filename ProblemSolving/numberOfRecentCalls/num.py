@@ -1,3 +1,31 @@
+# Newer better logic
+class RecentCounter(object):
+
+    def __init__(self):
+        # Initialize class variable to track time of pings
+        self.ping_at_last_time = []
+        
+
+    def ping(self, t):
+        """
+        :type t: int
+        :rtype: int
+        """
+        
+        # Add time to ping
+        self.ping_at_last_time.append(t)
+        # Iterate the first few ping times comparing with current time to eliminate ping > 3000
+        while (t-self.ping_at_last_time[0]) > 3000:
+            self.ping_at_last_time.pop(0)
+        # Return all the current pings
+        return len(self.ping_at_last_time)
+
+
+# Your RecentCounter object will be instantiated and called as such:
+# obj = RecentCounter()
+# param_1 = obj.ping(t)
+
+"""
 class RecentCounter(object):
 
     def __init__(self):
@@ -40,3 +68,4 @@ class RecentCounter(object):
 # Your RecentCounter object will be instantiated and called as such:
 # obj = RecentCounter()
 # param_1 = obj.ping(t)
+"""
