@@ -1,3 +1,4 @@
+# Logic 1
 def openOrSenior(data):
     result = []
     for person in data:
@@ -6,3 +7,9 @@ def openOrSenior(data):
         else:
             result.append("Open")
     return result
+
+# Logic 2
+def openOrSenior2(data):
+    return ["Senior" if (age >= 55 and hcap > 7) else "Open" for age, hcap in data]
+
+
