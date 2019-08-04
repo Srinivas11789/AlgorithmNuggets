@@ -41,9 +41,12 @@ def sort_3(a):
             third[1] += 1
         print(first, second, third)
     return [first[0]]*first[1] + [second[0]]*second[1] + [third[0]]*third[1] 
+#def inbuild_3_sort(a):
+#    return list(set(a))
 
 def main():
     a = [3,3,2,1,3,2,1]
     print(sort_3(a))
+    print(inbuild_3_sort(a))
 
 main()
