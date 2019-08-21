@@ -10,4 +10,11 @@ def solution(A):
     # hence taking first 2 possible -ve numbers 
     prod = max(A[0]*A[1]*A[-1],A[-1]*A[-2]*A[-3])
     return prod
+
+# Leetcode
+def solution(nums):
+        nums = sorted(nums, reverse=True)
+        positive_max = nums[0]*nums[1]*nums[2]
+        negative_max = nums[0]*nums[-1]*nums[-2]
+        return max(positive_max, negative_max) 
         
