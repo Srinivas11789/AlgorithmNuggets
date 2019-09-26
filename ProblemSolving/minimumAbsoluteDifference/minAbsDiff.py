@@ -14,13 +14,21 @@ def minimumAbsoluteDifference(n, arr):
                 min = diff
     return min
     """
-    min = 10 ** 10
+
+    # O(N)
+    """
+    min = 10 ** 10 # or float('inf')
     arr = sorted(arr)
     for i in range(n-1):
         diff = abs(arr[i] - arr[i+1])
         if diff < min:
             min = diff
     return min
+    """
+
+    # O(logN) assuming sorted or sort() uses best sorting
+    arr.sort()
+    return arr[1]-arr[0]
         
 
 if __name__ == "__main__":
