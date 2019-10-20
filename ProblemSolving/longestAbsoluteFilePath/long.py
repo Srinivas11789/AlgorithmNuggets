@@ -1,4 +1,3 @@
-# Pending...
 class Solution(object):
     def lengthLongestPath(self, inputs):
         """
@@ -25,6 +24,8 @@ class Solution(object):
                 #    parents.append(key)
                 if nest:
                     parents = parents[:nest]
+                else:
+                    parents = []
                 nest = 0
                 if len(inputs) > 4 and "".join(inputs[:4]) == " "*4:
                     inputs = ["\t"] + inputs[4:]
