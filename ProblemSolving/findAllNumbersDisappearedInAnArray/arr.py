@@ -59,3 +59,27 @@ class Solution(object):
             i += 1
         return nums
         """
+
+
+        """
+        # retry after a long time - 100 pass
+        class Solution(object):
+          def findDisappearedNumbers(self, nums):
+          """
+          :type nums: List[int]
+          :rtype: List[int]
+          """
+        
+          nums.sort()
+          result = set()
+          for i in range(len(nums)):
+              if nums[i]-nums[i-1] > 1:
+                  for j in range(nums[i-1]+1, nums[i]):
+                      result.add(j)
+          #print(nums)
+          if nums and nums[-1] < len(nums):
+            result.update(set(range(nums[-1]+1, len(nums)+1)))
+          if nums and nums[0] > 1:
+            result.update(set(range(1, nums[0])))
+          return result
+        """

@@ -31,4 +31,41 @@ class Solution(object):
                 result.append(n)
         return len(result)
         
+"""
+class Solution(object):
+    def rotatedDigits(self, N):
+        """
+        :type N: int
+        :rtype: int
+        """
         
+        rot = {
+            0: 0,
+            1: 1,
+            2: 5,
+            5: 2,
+            6: 9,
+            8: 8,
+            9: 6
+        }
+        
+        def good_number(num):
+            result = ""
+            for i in str(num):
+                if int(i) not in rot:
+                    return False
+                else:
+                    result += str(rot[int(i)])
+            #print(num , result)
+            if int(result) != num:
+                return True
+            else:
+                return False
+
+        ans = []
+        for i in range(1, N+1):
+            if good_number(i):
+                ans.append(i)
+        print(ans)
+        return len(ans)
+"""        

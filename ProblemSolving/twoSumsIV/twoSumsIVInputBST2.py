@@ -35,3 +35,38 @@ class Solution(object):
             return left or right
         
         return traverse(root)
+
+
+"""
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def findTarget(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: bool
+        """
+        
+        def traverse(node, target, visited):
+            if not node:
+                return
+            if node.val in visited:
+                self.ans = True
+            else:
+                visited.add(target-node.val)
+            if node.left:
+                traverse(node.left, target, visited)
+            if node.right:
+                traverse(node.right, target, visited)
+            
+        visit = set()
+        self.ans = False
+        traverse(root, k, visit)
+        return self.ans
+"""

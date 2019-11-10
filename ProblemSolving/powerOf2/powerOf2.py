@@ -31,5 +31,23 @@ def main():
 
 main()
 
-
+"""
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        
+        if n>1 and n%2 != 0:
+            return False
+        else:
+            target = 1
+            while target < n:
+                target *= 2
+            if target == n:
+                return True
+            else:
+                return False
+"""
 

@@ -97,3 +97,42 @@ class Solution(object):
         result.extend(dictionary["digit"])
         
         return result
+
+"""
+class Solution(object):
+    def reorderLogFiles(self, logs):
+        """
+        :type logs: List[str]
+        :rtype: List[str]
+        """
+        
+        def compare(item1, item2):
+            keys1 = item1.split(" ")
+            keys2 = item2.split(" ")
+            k1 = keys1[0]
+            v1 = " ".join(keys1[1:])
+            k2 = keys2[0]
+            v2 = " ".join(keys2[1:])
+            if v1 < v2:
+                return -1
+            elif v1 > v2:
+                return 1
+            else:
+                if k1 < k2:
+                    return -1
+                else:
+                    return 1
+        
+        letter_log = []
+        digit_log = []
+        for line in logs:
+            keys = line.split(" ")
+            if keys[1].isdigit():
+                digit_log.append(line)
+            else:
+                letter_log.append(line)
+        result = []
+        result.extend(sorted(letter_log, cmp=compare))
+        result.extend(digit_log)
+        return result
+"""
