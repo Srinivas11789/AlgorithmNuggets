@@ -1,5 +1,4 @@
-# Pending...
-
+# One hacky recursive way to work...
 """
 Given a number n, generate all binary search trees that can be constructed with nodes 1 to n.
 
@@ -38,7 +37,7 @@ for tree in generate_bst(3):
 #      \    /           \    /
 #       3  2             2  1
 """
-
+import copy
 class Node:
   def __init__(self, value, left=None, right=None):
     self.value = value
@@ -56,12 +55,14 @@ class Node:
 def generate_bst(n):
   trees = []
   ns = range(1, n+1)
-  def construct_tree(nodes, parent):
-      #if not nodes:
-      #    return
+  def construct_tree(nodes, parent, ancestor):
+      if not nodes:
+          return
       for i in range(len(nodes)):
-        print("hi", parent)
+        #print("hi", parent)
         root = Node(nodes[i])
+        if parent == None:
+          ancestor = root
         if parent and root.value < parent.value:
            parent.left = root
         elif parent:
@@ -69,12 +70,22 @@ def generate_bst(n):
         left = nodes[:i][::-1]
         right = nodes[i+1:]
         if left:
-          construct_tree(left, root)
+          construct_tree(left, root, ancestor)
         if right:
-          construct_tree(right, root)
-      #trees.append(root)
-  construct_tree(ns, None)
+          construct_tree(right, root, ancestor)
+        if parent == ancestor and len(str(ancestor)) == n:
+          #print("OOO")
+          #print(ancestor)
+          #print(root.value, ancestor.value)
+          trees.append(copy.deepcopy(ancestor))
+          #print(trees)
+          #ancestor = None
+  construct_tree(ns, None, None)
+  #print(trees)
   return trees 
 
 for tree in generate_bst(3):
+  print tree
+
+for tree in generate_bst(5):
   print tree
