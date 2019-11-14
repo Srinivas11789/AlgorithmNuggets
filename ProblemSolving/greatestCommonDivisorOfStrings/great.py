@@ -25,4 +25,31 @@ class Solution(object):
             if right and str_div(right, str1, str2) and len(right) > len(maxi):
                 maxi = right
         return maxi
-            
+
+"""
+class Solution(object):
+    def gcdOfStrings(self, str1, str2):
+        """
+        :type str1: str
+        :type str2: str
+        :rtype: str
+        """
+        
+        def divide_string(str1, k):
+            div = str1.split(k)
+            if "".join(div) == "":
+                return True
+            else:
+                return False
+        
+        key = ""
+        current_key = ""      
+        for i, j in zip(str1, str2):
+            if i == j:
+                current_key += i
+            else:
+                current_key = ""
+            if len(current_key) > len(key) and divide_string(str1, current_key) and divide_string(str2, current_key):
+                    key = current_key
+        return key
+"""            
