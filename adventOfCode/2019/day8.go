@@ -29,9 +29,10 @@ import (
     "os"
     "bufio"
     "strings"
+    "strconv"
 )
 
-func part1_assigned_user_input(n string) (int) {
+func part_n_assigned_user_input(n string, width int, height int) ([][]string) {
 
     // Open the file.
     f, _ := os.Open("day"+n+".input")
@@ -48,10 +49,10 @@ func part1_assigned_user_input(n string) (int) {
     }
 
     // Decode image data
-    return decode_image(encoded_data, 1);
+    return decode_image(encoded_data, width, height);
   }
 
-func decode_image(encoded_data []string, part int) (int) {
+func decode_image(encoded_data []string, w int, h int) ([][]string) {
     // As per input we need to create the layer 25 wide x 6 tall
 
     // Part 1 Params
@@ -59,6 +60,8 @@ func decode_image(encoded_data []string, part int) (int) {
     count1 := 0;
     count2 := 0;
     var min_zero_layer []string;
+    var top_layer []string;
+    var result [][]string;
 
     var decode_data [][]string;
     i := 0;
@@ -66,18 +69,29 @@ func decode_image(encoded_data []string, part int) (int) {
         var current_layer []string;
         var current_zero int;
         tall := 0;
-        for tall < 6 {
+        index := 0
+        for tall < h {
             width := 0;
-            for width < 25 {
+            for width < w {
                 if encoded_data[i] == "0" {
                     current_zero += 1;
                 }
                 current_layer = append(current_layer, encoded_data[i]);
+                if len(top_layer) > 0 && top_layer[index] == "2" && encoded_data[i] != "2" {
+                    fmt.Println(index, encoded_data[i]);
+                    top_layer[index] = encoded_data[i];
+                }
                 i += 1;
+                index += 1;
                 width += 1;
             }
             //i += 1;
             tall += 1;
+        }
+        fmt.Println(current_layer);
+        if len(top_layer) == 0 {
+            //fmt.Println(current_layer);
+            top_layer = current_layer;
         }
         if current_zero < count0 {
             count0 = current_zero;
@@ -95,16 +109,51 @@ func decode_image(encoded_data []string, part int) (int) {
             count2 += 1;
         }
     }
-    return count1*count2;
+    result = append(result, []string{strconv.Itoa(count1*count2)});
+    result = append(result, top_layer)
+    return result
 }
 
 func main() {
     day := "8";
     fmt.Println("Day "+ day +" of Advent-Of-Code!...");
     
+    // input
+    width := 25;
+    height := 6;
+
     // Program assigned user input
-    result1 := part1_assigned_user_input(day);
+    result1 := part_n_assigned_user_input(day, width, height);
   
     fmt.Println("Solution to Day "+ day +" is: ");
-    fmt.Println("* Part 1: program assigned-user input solution is: ", result1);
+    fmt.Println("* Part 1: program assigned-user input solution is: ", result1[0]);
+    fmt.Println("* Part 2: program assigned-user input solution is: ", result1[1]);
+    count := 0;
+    for _, nums := range result1[1] {
+        fmt.Print(nums);
+    }
+    fmt.Println("");
+    for _, nums := range result1[1] {
+        fmt.Print(nums," ");
+        count += 1;
+        if count == width {
+            fmt.Print("\n");
+            count = 0;
+        }
+    }
   }
+
+  /*
+  Solution to Day 8 is: 
+* Part 1: program assigned-user input solution is:  [1742]
+* Part 2: program assigned-user input solution is:  [0 1 1 0 0 0 0 1 1 0 1 0 0 0 1 1 1 1 1 0 0 1 1 0 0 1 0 0 1 0 0 0 0 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 1 1 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 1 1 1 0 1 0 0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 1 1 0 0 1 1 0 0 0 0 1 0 0 1 1 1 1 0 1 0 0 1 0]
+011000011010001111100110010010000101000110000100101000000010010101110010010101100001000100100001111010010100100010010000100100111001100001001111010010
+0 1 1 0 0 0 0 1 1 0 1 0 0 0 1 1 1 1 1 0 0 1 1 0 0 
+1 0 0 1 0 0 0 0 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 1 0 
+1 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 1 1 0 0 1 0 0 1 0 
+1 0 1 1 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 1 1 1 0 
+1 0 0 1 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 
+0 1 1 1 0 0 1 1 0 0 0 0 1 0 0 1 1 1 1 0 1 0 0 1 0
+
+Answer is GJYEA as visible above
+  */
