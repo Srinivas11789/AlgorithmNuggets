@@ -87,15 +87,18 @@ NO
 # Logic 1: We will do using graphs to track the paths 
 # - Build them using a dictionary/hashmap datastructure
 # - Bidirectional route - take that into consideration, consider infinite loops when cities route are completed by a circle
+# - Using traceback logic
 
 def get_paths(src, target, weight, path, paths, visited, graph):
+    # Reached the target, then append to paths
     if src == target:
         if weight not in paths:
             paths[weight] = []
         paths[weight].append(path)
     else:
+        # Iterate all possible destinations until we reach the target
         for dst in graph[src].keys():
-            if dst not in visited:
+            if dst not in visited: # Bidirectional check - we do not want to visit already visited node... avoid infinite loop
               get_paths(dst, target, weight+graph[src][dst], path+[(src, dst)], paths, visited+[dst], graph)
     return
 
