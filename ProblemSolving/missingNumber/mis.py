@@ -43,7 +43,18 @@ class Solution(object):
     
         """
         # 4. sort it and do it
-        
-        # 5. Use a dictionary
         """
+
+        # 5. Use a dictionary
+        class Solution:
+        def missingNumber(self, nums: List[int]) -> int:
+            import collections
+            n = range(len(nums))
+            num = collections.Counter(n)
+            for i in range(len(nums)):
+                num[nums[i]] += 1
+            for k,v in num.items():
+                if v == 1:
+                    return k
+            return n[-1]+1        
         
