@@ -116,4 +116,26 @@ class Solution(object):
             return result
         """
 """             
-        
+
+"""
+# Logic 2: Memoize and Perform the Iteration until length -->100 pass 73% faster
+class Solution:
+    def countAndSay(self, n: int) -> str:
+        if n == 0:
+            return ""
+        memo = ["1"]
+        for c in range(1, n+1):
+            target = memo[-1]
+            word = ""
+            i = 0
+            while i < len(target):
+                ch = target[i]
+                j = 1
+                i += 1
+                while i < len(target) and target[i] == ch:
+                    i += 1
+                    j += 1
+                word += str(j) + ch
+            memo.append(word)
+        return memo[-2]
+"""        
