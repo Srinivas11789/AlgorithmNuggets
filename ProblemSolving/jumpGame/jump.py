@@ -4,6 +4,15 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+
+        # Logic 0: Works Best and easy to understand - 75% faster
+        # Ref: https://leetcode.com/problems/jump-game/discuss/535541/Python-super-simple-solution-time%3A-O(N)-space-O(1) --> Good One!
+        jump_next = 1 # Move index wise to the right
+        for i in nums[:-1]: # O(N) Iteration - Omit the last element as we want to reach here and not jumo
+            jump_next = max(jump_next-1, i) # Every move reduce the jump_next as we moved to right and then calculate max jump here
+            if not jump_next: # Return false if jump becomes 0
+                return False
+        return True
         
         # Logic 1: BackTrack - You for sure start at index 1 but you can make any jump up until the maximum possible jump to reach the destination - Memory Limit Exceeded ( Almost all passed! - Need optimization )
         self.last_index = len(nums)-1
