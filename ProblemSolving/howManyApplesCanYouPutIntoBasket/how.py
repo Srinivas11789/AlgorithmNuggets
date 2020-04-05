@@ -30,3 +30,17 @@ class Solution(object):
                 apples += 1
         return apples
         """
+
+        """
+         basket = []
+        apples = sorted(arr)
+        weight = 5000
+        for apple in apples:
+            if weight-apple > 0:
+                basket.append(apple)
+                weight -= apple
+                #print(weight, apple)
+            else:
+                break
+        return len(basket) 
+        """
