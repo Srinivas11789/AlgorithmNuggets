@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func solve<nth_day>(input []interface{}) (int, int) {
+func solve<nth_day>(input []interface{}) (interface{},interface{}) {
 
 	var day<nth_day>Inputs []int
 

@@ -15,9 +15,9 @@ func main() {
 		3: solve3,
 		4: solve4,
 		5: solve5,
-		//6: solve6,
-		//7: solve7,
-		//8: solve8,
+		6: solve6,
+		7: solve7,
+		8: solve8,
 	}
 	// Iterate day inputs
 	for day, fun := range dayChallenges {
