@@ -1,0 +1,3 @@
+ % go run .
+[Samples] Day 1:142 0
+[Problem] Day 1:56049 0

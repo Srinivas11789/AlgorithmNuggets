@@ -1,0 +1,27 @@
+// Day <nth_day>
+package main
+
+import (
+	//"fmt"
+	"strconv"
+)
+
+func solve<nth_day>(input []interface{}) (interface{},interface{}) {
+
+	var day<nth_day>Inputs []int
+
+	// Customize input
+	for _, val := range input {
+		integer, err := strconv.Atoi(val.(string))
+		if err != nil { panic(err) }
+		day<nth_day>Inputs = append(day<nth_day>Inputs, integer)
+	}
+
+	// Solution 1
+	sol1 := 0
+
+	// Solution 2
+	sol2 := 0
+
+	return sol1, sol2
+}
